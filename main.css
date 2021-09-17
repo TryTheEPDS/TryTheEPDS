@@ -198,7 +198,7 @@ button {
 .quiz .question .options button.quiz-opt:hover {
   color: #f46046;
   cursor:pointer;
-  transition: all .30s ease;
+/*   transition: all .30s ease; */
 }
 /* .quiz .question .options button.quiz-opt:focus {
   background:orange;
