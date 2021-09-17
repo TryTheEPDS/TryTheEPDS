@@ -200,13 +200,13 @@ button {
   cursor:pointer;
   transition: all .30s ease;
 }
-.quiz .question .options button.quiz-opt:focus {
+/* .quiz .question .options button.quiz-opt:focus {
   background:orange;
   color:#fff;
   transition-delay: 1s;
   transition-property: background-color;
   transition: all .30s ease;
-}
+} */
 
 @media (max-width: 700px) {
   .quiz .question .options button.quiz-opt.range {
