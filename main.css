@@ -226,7 +226,7 @@ button {
 .quiz .question .options button.quiz-opt.range:last-of-type {
   margin-right:0;
 }
-@media (hover: hover) {
+@media (hover: none) {
 .quiz .question .options button.quiz-opt:hover {
   color: #fdca40;
   cursor:pointer;
