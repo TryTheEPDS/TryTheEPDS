@@ -390,9 +390,11 @@ margin-bottom: 14px;
   padding-bottom: 3px;
   }
 
-  @media (max-width: 700px) {
+  @media (max-width: 991px) {
     .instructions {
       margin-left: none;
       margin-right: none;
+      padding-left: none;
+      padding-right: none;
     }
   }
