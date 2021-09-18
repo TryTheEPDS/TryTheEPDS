@@ -237,7 +237,7 @@ button {
 @media (hover: none) {
   .quiz .question .options button.quiz-opt {
     color: rgb(43, 40, 40); 
-}
+  }}
 
 /* .quiz .question .options button.quiz-opt:focus {
   background:orange;
