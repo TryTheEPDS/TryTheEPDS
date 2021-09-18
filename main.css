@@ -95,7 +95,7 @@ button {
 
 @media (max-width: 700px) {
   .instruction {
-    font-size: 1.25rem;
+    font-size: 1rem;
   }
 }
 
@@ -236,7 +236,6 @@ button {
   .quiz .question .options button.quiz-opt {
   background: none;
   cursor:pointer;
-  transition: all .30s ease;
 }}
 /* .quiz .question .options button.quiz-opt:focus {
   background:orange;
@@ -389,4 +388,11 @@ margin-bottom: 14px;
   margin-bottom: 2rem;
   padding-top: 10px;
   padding-bottom: 3px;
+  }
+
+  @media (max-width: 700px) {
+    .instructions {
+      margin-left: none;
+      margin-right: none;
+    }
   }
