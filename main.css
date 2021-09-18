@@ -1,9 +1,18 @@
 body {
-
-	background:#fdca40 !important;
   font-size:10px;
   justify-content: center;
   
+}
+
+.backgroundColor {
+  background-color: #fdca40;
+}
+
+.backgroundImage {
+  background-image: url('Stratton_Poster_Figures.png');
+  background-size: cover;
+  background-attachment: fixed;
+  background-color: rgba(0,0,0,0.55);
 }
 
 
@@ -22,7 +31,14 @@ button {
   margin-bottom: 0px;
   border: 0px;
   text-align: center;
+  padding-top: 2rem;
 
+}
+
+.copyright {
+  font-size: 0.5rem;
+  padding-top: 4rem;
+  text-align: center;
 }
 
 .resultText {
@@ -56,12 +72,12 @@ button {
 .instruction {
 
   font-size: 1.5rem;
-  color: rgb(87, 81, 81); 
+  color: black;
   font-family: pt-sans-pro, sans-serif;
   font-weight: 400;
   font-style: normal;
   text-align: center;
-  margin: 1rem 0 1rem 0;
+  margin: 2rem;
  text-align: center; 
 
 }
@@ -137,6 +153,7 @@ button {
 /* CUSTOM STYLES BELOW */
 /* Utility Styles */
 .m_t_2 {margin-top:2rem;}
+.m_t_5 {margin-top:5rem;}
 /* .p_1 {padding:0 1rem;} */
 .card {
   border-radius: 20px;
@@ -155,7 +172,7 @@ button {
 
 .quiz .question.card {
   padding:2rem;
-  background-color: #fdca40;
+  background-color: transparent;
   border: none;
 }
 
@@ -196,17 +213,17 @@ button {
   margin-right:0;
 }
 .quiz .question .options button.quiz-opt:hover {
-  color: #f46046;
+  background-color: white;
   cursor:pointer;
-/*   transition: all .30s ease; */
+  /* transition: all .30s ease; */
 }
 /* .quiz .question .options button.quiz-opt:focus {
   background:orange;
   color:#fff;
   transition-delay: 1s;
   transition-property: background-color;
-  transition: all .30s ease;
-} */
+  transition: all .30s ease; */
+/* } */
 
 @media (max-width: 700px) {
   .quiz .question .options button.quiz-opt.range {
