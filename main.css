@@ -226,12 +226,18 @@ button {
 .quiz .question .options button.quiz-opt.range:last-of-type {
   margin-right:0;
 }
-@media (hover: none) {
+
+@media (hover: hover) {
 .quiz .question .options button.quiz-opt:hover {
   color: #fdca40;
   cursor:pointer;
   transition: all .30s ease;
 }}
+
+@media (hover: none) {
+  .quiz .question .options button.quiz-opt {
+    color: rgb(43, 40, 40); 
+}
 
 /* .quiz .question .options button.quiz-opt:focus {
   background:orange;
