@@ -228,7 +228,7 @@ button {
 }
 
 @media (hover: hover) {
-.quiz .question .options button.quiz-opt:hover {
+.quiz .question .options button.quiz-opt {
   color: #fdca40;
   cursor:pointer;
   transition: all .30s ease;
