@@ -227,6 +227,11 @@ button {
   margin-right:0;
 }
 
+
+.quiz .question .options button.quiz-opt:active {
+  color: #fdca40;
+}
+
 @media (hover: hover) {
 .quiz .question .options button.quiz-opt {
   color: #fdca40;
