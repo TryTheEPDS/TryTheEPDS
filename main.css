@@ -1,20 +1,31 @@
 body {
   font-size:10px;
   justify-content: center;
+  background-color: #768A95 !important;
   
 }
 
-.backgroundColor {
-  background-color: #fdca40;
+
+#mainNavbar {
+  font-family: sans-serif;
+  font-weight: 400;
+  font-size: 1.5rem;
+  font-weight: 100;   
+  letter-spacing: 2px; 
 }
 
-.backgroundImage {
-  background-image: url('Stratton_Poster_Figures.png');
-  background-size: cover;
-  background-attachment: fixed;
-  background-color: rgba(0,0,0,0.55);
+#mainNavbar .nav-link {
+  color: #0b3948;
 }
 
+#mainNavbar .nav-link:hover {
+  color: #fdca40;
+}
+
+#mainNavbar .navbar-brand {
+  color: white;
+  font-size: 1.5rem;
+}
 
 button {
   user-select: none;
@@ -56,7 +67,7 @@ button {
 .EPDS {
 
   font-size:10rem;
-  color: #f46046; 
+  color: #fdca40; 
   font-family: pt-sans-pro, sans-serif;
   font-weight: 700;
   font-style: normal;
@@ -71,20 +82,20 @@ button {
 
 .instruction {
 
-  font-size: 1.5rem;
-  color: black;
+  font-size: 1.25rem;
+  color: rgba(43, 40, 40, 0.75);
   font-family: pt-sans-pro, sans-serif;
   font-weight: 400;
   font-style: normal;
   text-align: center;
   margin: 2rem;
- text-align: center; 
+
 
 }
 
 @media (max-width: 700px) {
   .instruction {
-    font-size: 1rem;
+    font-size: 1.25rem;
   }
 }
 
@@ -99,13 +110,16 @@ button {
   width: 200px;
   margin-top: 2rem;
   font-size: 1rem;
+  letter-spacing: 2px;
+  font-family: sans-serif;
+  font-weight: 400px;
  
 }
 
 .startButton:hover {
   cursor: pointer;
-  color: #0b3948;
-  background-color: white;
+  color: white;
+  background-color: #7ea3cc;
 }
 
 
@@ -116,24 +130,24 @@ button {
   appearance: none;
   width: 100%;
   height: 0.5rem;
-  margin:0.5rem 0 0.15rem 0;
+  margin:2rem 0 0.15rem 0;
   border: none;
   background: rgba(0, 0, 0, 0.164);
 }
 
 .quiz progress::-webkit-progress-bar {
-  background-color: rgba(207, 243, 182, 0.24);
+  background-color: rgba(190, 181, 49, 0.603);
   margin-left: auto;
   margin-right: auto;
 }
 
 .quiz progress::-webkit-progress-value {
-  background-color: rgba(207, 243, 182, 0.24);
+  background-color: rgba(190, 181, 49, 0.603);
   transition: all 1s ease;
 }
 
 .quiz progress::-moz-progress-bar {
-  background-color: rgba(207, 243, 182, 0.24);
+  background-color: rgba(190, 181, 49, 0.603);
   margin-left: auto;
   margin-right: auto;
 }
@@ -197,7 +211,7 @@ button {
   padding:1rem 2rem;
   border: none;
   font-size:1.25rem;
-  border-radius:10px;
+  border-radius:20px;
   text-align:center;
   background:none;
   outline:none;
@@ -213,10 +227,17 @@ button {
   margin-right:0;
 }
 .quiz .question .options button.quiz-opt:hover {
-  background-color: white;
+  color: #fdca40;
   cursor:pointer;
-  /* transition: all .30s ease; */
+  transition: all .30s ease;
 }
+
+@media (hover: none) {
+  .quiz .question .options button.quiz-opt {
+  background: none;
+  cursor:pointer;
+  transition: all .30s ease;
+}}
 /* .quiz .question .options button.quiz-opt:focus {
   background:orange;
   color:#fff;
@@ -231,6 +252,145 @@ button {
     padding:1.5rem;
 }}
 
+.faq-section {
+  background: #768A95;
+  min-height: 100vh;
+  padding: 10vh 0 0;
+}
+.faq-title h2 {
+position: relative;
+margin-bottom: 45px;
+display: inline-block;
+font-weight: 400px;
+line-height: 1;
+color: white;
+letter-spacing: 2px;
+font-family: pt-sans-pro, sans-serif;
 
+}
+.faq-title h2::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  width: 60px;
+  height: 2px;
+  background: #fdca40;
+  bottom: -25px;
+  margin-left: -30px;
+}
+.faq-title p {
+padding: 0 190px;
+margin-bottom: 10px;
+font-family: pt-sans-pro, sans-serif;
+font-weight: 400px;
+}
 
+.faq {
+background: #FFFFFF;
+box-shadow: 0 2px 48px 0 rgba(0, 0, 0, 0.06);
+border-radius: 4px;
+}
 
+.faq .card {
+border: none;
+background: none;
+border-bottom: 1px dashed #CEE1F8;
+}
+
+.faq .card .card-header {
+padding: 0px;
+border: none;
+background: none;
+-webkit-transition: all 0.3s ease 0s;
+-moz-transition: all 0.3s ease 0s;
+-o-transition: all 0.3s ease 0s;
+transition: all 0.3s ease 0s;
+}
+
+.faq .card .card-header:hover {
+  background: rgba(190, 181, 49, 0.25);
+  padding-left: 10px;
+}
+
+.faq .card .card-header .faq-title {
+width: 100%;
+text-align: left;
+padding: 0px;
+padding-left: 30px;
+padding-right: 30px;
+font-weight: 400;
+font-size: 15px;
+letter-spacing: 1px;
+color:rgba(43, 40, 40, 0.95);
+text-decoration: none !important;
+-webkit-transition: all 0.3s ease 0s;
+-moz-transition: all 0.3s ease 0s;
+-o-transition: all 0.3s ease 0s;
+transition: all 0.3s ease 0s;
+cursor: pointer;
+padding-top: 20px;
+padding-bottom: 20px;
+}
+
+.faq .card .card-header .faq-title .badge {
+display: inline-block;
+width: 20px;
+height: 20px;
+line-height: 14px;
+float: left;
+-webkit-border-radius: 100px;
+-moz-border-radius: 100px;
+border-radius: 100px;
+text-align: center;
+background: #fdca40;
+color: #fff;
+font-size: 12px;
+margin-right: 20px;
+}
+
+.faq .card .card-body {
+padding: 30px;
+padding-left: 35px;
+padding-bottom: 16px;
+font-weight: 400;
+font-size: 16px;
+color: rgba(43, 40, 40, 0.75);
+line-height: 28px;
+letter-spacing: 1px;
+border-top: 1px solid #F3F8FF;
+}
+
+.faq .card .card-body p {
+margin-bottom: 14px;
+}
+
+@media (max-width: 991px) {
+.faq {
+  margin-bottom: 30px;
+}
+.faq .card .card-header .faq-title {
+  line-height: 26px;
+  margin-top: 10px;
+}
+}
+
+.resources-section {
+  background: #768A95;
+  min-height: 100vh;
+  padding: 10vh 0 0;
+}
+
+.instructions {
+  background: #FFFFFF;
+  box-shadow: 0 2px 48px 0 rgba(0, 0, 0, 0.06);
+  border-radius: 4px;
+  border-left: 1rem solid #fdca40;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  margin-left: 4rem;
+  margin-right: 4rem;
+  padding-top: 10px;
+  padding-bottom: 3px;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  }
